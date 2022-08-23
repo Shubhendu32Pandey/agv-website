@@ -1,0 +1,7 @@
+enable  : true
+title   : Publications
+item    :
+  - number  : 1
+    title   : Optimal visual servoing of a ground robot following an aerial object using a Pan-Tilt-Zoom (PTZ) camera
+    description : >
+      AAAI 2019.

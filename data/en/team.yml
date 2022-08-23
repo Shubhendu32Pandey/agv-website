@@ -1,0 +1,16 @@
+enable  : true
+title   : Our Team
+
+member  :
+  - image         : images/team/Shubendu Pandey.jfif
+    name          : Shubendu Pandey
+    designation   : Mechatronix Team Member
+    facebookURL   : https://www.facebook.com/shubhendu.pandey.129
+    linkedinURL    : https://www.linkedin.com/in/c-shanmukh/
+    
+  - image         : images/team/Shanmukh.jfif
+    name          : C Shanmukh Siva Sai
+    designation   : Mechatronix Team Member
+    facebookURL   : https://www.facebook.com/shanmukh.shivasai
+    linkedinURL    : https://www.linkedin.com/in/c-shanmukh/
+

@@ -1,0 +1,15 @@
+enable  : true
+item    :
+  - positionRight : false
+    image : images/about/Path Planning.jpeg
+    title : Motion Planning
+    description : >
+      The main focus of this project is studying questions as Ackermann planning, high-dimensional planning in real-time, planning that "learns how to plan" based on experience, automatic generation of a compact representation of planning problems and others.
+      We work on the development of real-time planning algorithms. Recent work includes developments on Lattice-based planners, Timed Elastic Band, Hybrid A* and Rapidly-exploring random trees.
+      These methods have to be developed with rigorous theoretical guarantees for physical robots mainly our electric car platform to performing challenging tasks like lane changing, traffic simulation, intersection decision, parallel parking in real-world environments.
+  
+  - positionRight : true
+    image : images/about/Localization.jpeg
+    title : Localization
+    description : >
+      One of the most important requirements for automating a robot is its localization. By localization, we mean that the robot must, at all times, have a fairly accurate idea about its position in a given map or environment. If a robot does not know where it is, it can not decide what to do next. In order to localize itself, a robot has to have access to relative and absolute measurements that contain information related to its position. The robot gets this information from its sensors. The sensors give it feedback about its movement and the environment around the robot. Given this information, the robot has to determine its location as accurately as possible. What makes this difficult is the existence of uncertainty in both the movement and the sensing of the robot. The uncertain information needs to be combined in an optimal way. We did so using the Extended Kalman filter algorithm, which is a kind of Bayesian filter.

@@ -1,0 +1,49 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $data.workingprocess }}
+    {{ if .enable }}
+    {{ "<!-- Work Process Section Start -->" | safeHTML }}
+    <section class="service-2 section bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="title text-center">
+                        {{ with .topTitle }}
+                            <h4>{{ . }}</h4>
+                        {{ end }}
+                        {{ with .title }}
+                            <h2>{{ . }}</h2>
+                            <span class="border"></span>
+                        {{ end }}
+                        {{ with .subtitle }}
+                            <p>{{ . }}</p>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                {{ range $index,  $element:= .item }}
+                    <div class="col-md-12 col-sm-4 p-0">
+                        <div class="row row-striped service-item text-center">
+                        	<div class="col-2 text-right">
+					<h1 class="display-4"><span class="badge badge-secondary">23</span></h1>
+					<h2>OCT</h2>
+					</div>
+					<div>{{ with .title }}
+                                <h5>{{ . }}</h5>
+                            {{ end }}
+                            {{ with .description }}
+                                <p>{{ . }}</p>
+                            {{ end }}
+					</div>
+                                                    </div>
+                    </div>
+                    {{ if eq (mod $index 2) 1 }}
+                        <div class="w-100"></div>
+                    {{ end }}
+                {{ end }}
+            </div>
+        </div>
+    </section>
+    {{ "<!-- Work Process section end -->" | safeHTML }}
+    {{ end }}
+{{ end }}
